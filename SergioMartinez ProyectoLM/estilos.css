@@ -1,0 +1,137 @@
+*{	margin: 0px;  padding: 0px; }
+
+
+@media(min-width: 1024px) and (max-width: 1920px)  /*monitores normales tamaño 1000px*/
+{
+#pagina {	width:1000px;   }
+}
+@media(min-width: 2560px)  /*monitores grandes 24, 25, 27, 32'' tamaño 2000px*/
+{
+#pagina {	width:2000px;   }
+}
+@media(max-width: 800px)  /*monitores antiguos y moviles*/
+{
+#pagina {	width:90%; } 
+}
+
+
+@font-face {
+    font-family: "titulo";
+    src: url("estilos/titulo.ttf");
+}
+@font-face {
+    font-family: "titulonav";
+    src: url("estilos/titulonav.ttf");
+}
+@font-face {
+    font-family: "normal";
+    src: url("estilos/normal.otf");
+}
+
+.estilo-pagina
+{
+	margin: auto; 
+	background: rgb(150, 144, 144);
+	-webkit-box-shadow: 7px 7px 9px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 9px -5px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 9px -5px rgba(0,0,0,0.75);
+}
+body
+{
+	margin-top: 20px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+header
+{
+	background: black;
+}
+header img
+{
+	width: 100%;
+}
+
+/*Nav de la pagina*/
+
+nav 
+{ 
+	background: black;
+	padding: 10px 80px;
+	font-family: titulonav;	
+	position: relative;
+}
+nav ul
+{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+nav>ul>li>a
+{
+	color: #1081b6;
+	text-decoration: none;
+}
+nav>ul>li>a:hover
+{
+	color: #cf740b;
+}
+
+/*Fin del nav de la pagina*/
+
+section
+{
+	padding: 20px;
+}
+.normal
+{
+	font: 22px normal;
+	color: rgb(0, 0, 0);
+	line-height: 24px; 
+}
+.titulo
+{
+	  font: 30px titulo;
+	  color: #1622c2;
+	  font-weight: bold; 
+	  text-align: center; 
+}
+.elemento3
+{
+	width: 48%;
+	padding-bottom: 10px;
+	float: left;
+}
+.elemento4
+{
+	width: 48%;
+	padding-bottom: 10px;
+	float: right;
+}
+.elementogrande
+{
+	width: 100%;
+	text-align: center;
+
+}
+.contenedor
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+
+}
+.efecto:hover{ /*Efecto borde coloreado*/
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #cf740b;
+-webkit-box-shadow: 0px 0px 15px 15px #cf740b;
+}
+footer
+{
+	height: 20px;
+
+}
